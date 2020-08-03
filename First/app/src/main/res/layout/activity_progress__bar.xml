@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Progress_Bar">
+
+    <ProgressBar
+        android:id="@+id/progressBar_circular_indeterminate"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+         />
+
+    <!--Below line android:indeterminate="false" wont work in this case.
+    To make progress bar determinate we need to do some custom animation and I haven't done that.-->
+    <ProgressBar
+        android:id="@+id/progressBar_circular_non_indeterminate"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/progressBar_circular_indeterminate"
+        android:indeterminate="false"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="142dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/progressBar_circular_indeterminate"
+        android:text="Determinate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/progressBar_circular_non_indeterminate"
+        android:text="Indeterminate" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar Indeterminate Horizontal"
+        android:layout_below="@+id/progressBar_indeterminate_horizontal"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar_indeterminate_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:indeterminate="true"
+        android:layout_below="@id/progressBar_circular_non_indeterminate"
+        android:layout_centerInParent="true"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginTop="20dp"
+        />
+    <!--style will change progress abr from horizontal to vertical-->
+
+    <ProgressBar
+        android:id="@+id/progressBar_determinate_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_below="@+id/progressBar_indeterminate_horizontal"
+        android:layout_marginTop="60dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar Determinate Horizontal"
+        android:layout_below="@+id/progressBar_determinate_horizontal"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_start_progress_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:text="Start Progress Bar"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:text="Doesn't Work, Determinate needs special animation" />
+</RelativeLayout>

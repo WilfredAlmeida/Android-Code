@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:id="@+id/editText_asynctask_to_sqlite_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:id="@+id/editText_asynctask_to_sqlite_age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editText_asynctask_to_sqlite_name"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button_asynctask_to_sqlite_save"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/editText_asynctask_to_sqlite_age"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/listView_asynctask_to_sqlite_display_data"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/button_asynctask_to_sqlite_save"
+        android:layout_marginTop="25dp"
+        />
+
+</RelativeLayout>

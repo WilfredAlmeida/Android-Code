@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Tag_Static_Method">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/support_map_fragment_tag"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        /><!--To add maps using fragments 2 classes MapFragment and SupportMapFragment
+        are provided. SupportMapFragment has more backward compatibility.
+        Now by giving its package in android:name it is kind of a component/view and
+        we can access it in .java just like other components. I am not sure if it
+        really becomes a component but have written it just for understanding-->
+
+</LinearLayout>

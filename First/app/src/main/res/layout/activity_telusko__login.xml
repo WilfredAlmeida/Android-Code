@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Telusko_Login"
+    android:background="@color/colorOne"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginTop="25sp"
+        android:hint="Enter Name"
+        android:fontFamily="@font/tinos"
+        android:textSize="18sp"
+        android:id="@+id/edittext_name"
+        android:background="@color/White"
+        />
+    <LinearLayout
+        android:layout_width="160sp"
+        android:layout_height="70sp"
+        android:background="@color/White"
+        android:orientation="horizontal"
+        android:layout_marginTop="25sp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:text="Gender"
+        android:fontFamily="@font/tinos"
+        android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radiogroup_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <RadioButton
+                    android:id="@+id/radiobutton_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radiobutton_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Female" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:background="@color/White"
+        android:hint="Enter Email"
+        android:layout_marginTop="25sp"
+        android:id="@+id/edittext_email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:background="@color/White"
+        android:hint="Enter Password"
+        android:layout_marginTop="25sp"
+        android:id="@+id/edittext_password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="35dp"/>
+
+</LinearLayout>

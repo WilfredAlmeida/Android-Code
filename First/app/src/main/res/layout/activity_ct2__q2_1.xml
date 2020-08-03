@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editText_Q2_1_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Student Name"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editText_Q2_1_student_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Student Age"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/editText_Q2_1_student_roll_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Student Roll No"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editText_Q2_1_student_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Student Percentage"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/editText_Q2_1_student_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Enter Student Rank"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button_Q2_1_submit"
+        android:layout_marginTop="15dp"/>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:scrollbars="vertical"
+        android:stretchColumns="0,1,2,3,4">
+        <!--space is left after all required columns are added,
+        this streches the columns in the row, numbers indicate column index-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Roll No"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Percentage"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rank"
+                android:textAlignment="center"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

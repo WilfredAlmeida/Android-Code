@@ -29,12 +29,24 @@ public class Gridview extends AppCompatActivity {
         gridView_images = findViewById(R.id.gridView_images);
 
         String[] languages = {"C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
-        "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C"};
+        "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C","C++","Java","Python","Go","JavaScript","Husk","Visual Basic",
+                "Assembly","C#","Cobol","Cow","Swift","Scala","Ruby","B","C"};
 
         ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_gallery_item,Arrays.asList(languages));
 
-        gridView_images.setAdapter(adapter);//set this to display languages
-        gridView_languages.setAdapter(new ImageAdapter(this));//set this to display images
+        gridView_languages.setAdapter(adapter);//set this to display languages
+        gridView_images.setAdapter(new ImageAdapter(this));//set this to display images
 
     }
 

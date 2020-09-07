@@ -21,7 +21,6 @@ public class CT2_Q2_1 extends AppCompatActivity {
     TableRow tableRow_data_display;
     TableLayout tableLayout;
     SQLiteDatabase database_student;
-    static int counter = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -24,7 +24,7 @@ of the ImageView.
         android:layout_marginTop="70dp"
         android:background="@android:color/holo_blue_light"
         android:padding="10dp"
-        android:text="TextView placed at the top of the Imageview"
+        android:text="Frame Layout: TextView placed at the top of the Imageview"
         android:textColor="@android:color/white"
         android:textSize="22sp"/>
 

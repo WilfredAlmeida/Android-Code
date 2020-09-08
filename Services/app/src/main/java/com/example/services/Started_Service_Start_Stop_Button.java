@@ -1,4 +1,4 @@
-//read chapter 45 of the pdf book downloaded.
+//read chapter 45 of the pdf book 'Android Notes for Professionals'
 package com.example.services;
 
 import androidx.appcompat.app.AppCompatActivity;

@@ -27,9 +27,9 @@ public class Service__Bound_Service_Start_Stop_Button extends Service
     @Override
     public void onDestroy()
     {
+        super.onDestroy();
         System.out.println("Reached Destroy");
         player.stop();
-        super.onDestroy();
     }
 
     public class MyBinder extends Binder
